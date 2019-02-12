@@ -1,0 +1,20 @@
+header{
+	> section{
+		@media (max-width: 425px) {
+			margin-top: -5px;
+		}
+
+		@media (max-width: 374px) {
+			margin-top: -15px;
+		}
+	}
+}
+
+
+.main-banner{
+	.main-banner-img{
+		-webkit-box-shadow: 10px 10px 40px -15px rgba(0,0,0,0.75);
+		-moz-box-shadow: 10px 10px 40px -15px rgba(0,0,0,0.75);
+		box-shadow: 10px 10px 40px -15px rgba(0,0,0,0.75);
+	}
+}

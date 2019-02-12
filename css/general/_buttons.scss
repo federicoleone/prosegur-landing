@@ -1,0 +1,72 @@
+$yellow-prosegur-form-hover: #927b1a;
+
+.btn-primary-prosegur{
+	background-color: $yellow-prosegur;
+	border-color: $yellow-prosegur;
+	color: $color-black;
+
+	&:hover,
+	&:focus{
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		border-color: $yellow-prosegur-hover;
+		background-color: $yellow-prosegur-hover;	
+		color: $color-black;	
+	}
+
+	&:active,
+	&:not(:disabled):not(.disabled):active{
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		border-color: $yellow-prosegur-hover;
+		background-color: $yellow-prosegur-hover;	
+		color: $color-black;	
+	}
+
+	&.btn-primary-banner-principal{
+		&:hover,
+		&:focus,
+		&:active,
+		&:not(:disabled):not(.disabled):active{
+			-webkit-box-shadow:0 0 0 0.2rem $yellow-prosegur-form-hover;
+			-moz-box-shadow:0 0 0 0.2rem $yellow-prosegur-form-hover;
+			box-shadow:0 0 0 0.2rem $yellow-prosegur-form-hover;
+			border-color: $yellow-prosegur;
+			background-color: $yellow-prosegur;	
+			color: $color-black;	
+		}
+	}
+}
+
+.btn-secondary-prosegur{
+	color: $yellow_prosegur;
+	border-color: $yellow-prosegur;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;	
+
+	a{
+		color: $yellow-prosegur;
+		-webkit-transition: all 0.2s;
+		transition: all 0.2s;	
+	}
+
+	&:hover{
+		background: none;
+		border-color: $color-white;
+		a{
+			color: $color-white;
+			text-decoration: none;
+		}
+	}
+}
+
+
+.link-prosegur{
+	color: $brown-prosegur;
+	&:hover{
+		color: $brown-prosegur;
+		text-decoration: underline;
+	}
+}

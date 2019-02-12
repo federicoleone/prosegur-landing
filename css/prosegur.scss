@@ -1,0 +1,15 @@
+/* Vendor */
+@import "vendor/_bootstrap.min.scss";
+@import "vendor/_fontawesome.scss";
+@import "vendor/_aos.scss";
+
+/* General */
+@import "general/_typography";
+@import "general/_colors";
+@import "general/_buttons";
+@import "general/_img_background";
+
+
+/* Modules */
+@import "modules/_nav_landing";
+@import "modules/_main_banner";

@@ -1,0 +1,50 @@
+$color-white: #fff;
+$color-black: #000;
+$yellow-prosegur: #ffcd00;
+$yellow-prosegur-hover: #ffa500;
+$brown-prosegur:#795548;
+$bg-light-prosegur: #f1f1f1;
+$bg-lighter-prosegur: #fbfbfb;
+
+
+.link-white{
+	color: $color-white;
+	&:hover{
+		color:$yellow-prosegur;
+	}
+}
+
+.text-black{color:$color-black;}
+
+.text-brown{color: $brown-prosegur;}
+
+.link-brown{
+	color: $brown-prosegur;
+	&:hover{
+		color:$color-black;
+	}
+}
+
+.yellow-prosegur{color:$yellow-prosegur;}
+
+.bg-yellow-prosegur{
+	background-color: $yellow-prosegur;
+}
+
+.bg-light-prosegur{
+	background-color: $bg-light-prosegur;
+}
+
+.bg-lighter-prosegur{
+	background-color: $bg-lighter-prosegur;
+}
+
+
+.bg-gradient-violet{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#444b67+0,2c3141+50,16171d+100 */
+	background: #444b67; /* Old browsers */
+	background: -moz-linear-gradient(top, #444b67 0%, #2c3141 50%, #16171d 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #444b67 0%,#2c3141 50%,#16171d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #444b67 0%,#2c3141 50%,#16171d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444b67', endColorstr='#16171d',GradientType=0 ); /* IE6-9 */
+}
