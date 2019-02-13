@@ -51,10 +51,8 @@ $(window).on('resize scroll', function() {
 
     if ($(this).isInViewport()) {
       $(this).carousel('cycle');
-      console.log('clcle');
     } else {
       $(this).carousel('pause');
-      console.log('pause');
     }
   });
 });
