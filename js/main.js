@@ -34,3 +34,27 @@ $(document).ready(function () {
 
 /* AOS */
 AOS.init();
+
+/* Visible el on scrren */
+$.fn.isInViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+$(window).on('resize scroll', function() {
+  $('#carousel-mainbanner').each(function() {
+
+    if ($(this).isInViewport()) {
+      $(this).carousel('cycle');
+      console.log('clcle');
+    } else {
+      $(this).carousel('pause');
+      console.log('pause');
+    }
+  });
+});
