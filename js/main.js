@@ -2,7 +2,7 @@
 $(function(){
     /* Header add bg black */
     function nav_scroll_bg(){
-        if ($(window).scrollTop() > 50) {
+        if ($(window).scrollTop() > 30) {
            $('.navbar').addClass('nav-landing-scroll-bg');
         } else {
            $('.navbar').removeClass('nav-landing-scroll-bg');
@@ -39,7 +39,7 @@ $(function(){
     /* AOS */
     AOS.init();
 
-    /* Visible el on screen */
+    /* Visible el on screen 
     $.fn.isInViewport = function() {
       var elementTop = $(this).offset().top;
       var elementBottom = elementTop + $(this).outerHeight();
@@ -65,6 +65,7 @@ $(function(){
       });
 
     });
+    */
 });
 
 /* Validation */
