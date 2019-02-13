@@ -63,11 +63,10 @@ $(function(){
       $('#carousel-mainbanner').mouseover(function(){
             $(this).carousel('pause');     
       });
+    });
 
-      $('#carousel-mainbanner input').mouseover(function(){
-            $(this).carousel('pause');     
-      });
-
+    $('#carousel-mainbanner input').click(function(){
+        $('#carousel-mainbanner').carousel('pause'); 
     });
 });
 
