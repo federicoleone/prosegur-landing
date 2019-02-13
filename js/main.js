@@ -66,9 +66,14 @@ $(function(){
     });
     */
 
-    $('#carousel-mainbanner input').click(function(){
-        $('#carousel-mainbanner').carousel('pause');
+    $('#carousel-mainbanner').carousel({
+        pause: "false"
     });
+
+    $('#carousel-mainbanner').find('input').on('click', function(){
+        $('#carousel-mainbanner').carousel('pause')
+    });
+
 });
 
 /* Validation */
