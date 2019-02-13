@@ -39,7 +39,7 @@ $(function(){
     /* AOS */
     AOS.init();
 
-    /* Visible el on screen 
+    /* Visible el on screen */
     $.fn.isInViewport = function() {
       var elementTop = $(this).offset().top;
       var elementBottom = elementTop + $(this).outerHeight();
@@ -50,6 +50,9 @@ $(function(){
       return elementBottom > viewportTop && elementTop < viewportBottom;
     };
 
+    $('#carousel-mainbanner').carousel({
+        pause: "false"
+    });
 
     $(window).on('resize scroll', function() {
       $('#carousel-mainbanner').each(function() {
@@ -59,16 +62,17 @@ $(function(){
             $(this).carousel('pause');
         }
       });
-
-      $('#carousel-mainbanner').mouseover(function(){
-            $(this).carousel('pause');     
-      });
     });
-    */
+    
+    /*
+	$('#carousel-mainbanner').mouseover(function(){
+		$(this).carousel('pause');     
+	});    
 
-    $('#carousel-mainbanner').carousel({
-        pause: "false"
-    });
+	$('#carousel-mainbanner').mouseleave(function(){
+		$(this).carousel('cycle');     
+	}); 
+	*/
 
     $('#carousel-mainbanner').find('input').on('click', function(){
         $('#carousel-mainbanner').carousel('pause')
