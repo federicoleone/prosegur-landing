@@ -39,7 +39,7 @@ $(function(){
     /* AOS */
     AOS.init();
 
-    /* Visible el on screen */
+    /* Visible el on screen 
     $.fn.isInViewport = function() {
       var elementTop = $(this).offset().top;
       var elementBottom = elementTop + $(this).outerHeight();
@@ -64,9 +64,10 @@ $(function(){
             $(this).carousel('pause');     
       });
     });
+    */
 
     $('#carousel-mainbanner input').click(function(){
-        $('#carousel-mainbanner').carousel('pause'); 
+        $('#carousel-mainbanner').carousel('pause');
     });
 });
 
