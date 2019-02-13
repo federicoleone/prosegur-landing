@@ -1,0 +1,21 @@
+@media (max-width: 575px) {
+	.pl-xs-none,
+	.px-xs-none{
+		padding-left: 0 !important;
+	}
+
+	.pr-xs-none,
+	.px-xs-none{
+		padding-right: 0 !important;
+	}
+
+	.pt-xs-none,
+	.py-xs-none{
+		padding-top: 0 !important;
+	}
+
+	.pb-xs-none,
+	.py-xs-none{
+		padding-bottom: 0 !important;
+	}
+}
