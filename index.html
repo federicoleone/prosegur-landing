@@ -17,15 +17,14 @@
 
       <nav class="navbar fixed-top px-0 nav-landing">
         <div class="container" data-aos="fade-down" data-aos-duration="1000">
-            <a class="navbar-brand m-0 mr-auto">
+            <a href="/" class="navbar-brand m-0 mr-auto">
                 <img src="img/logo_prosegur.jpg" class="img-fluid d-sm-inline-block d-none">
                 <img src="img/logo_prosegur_small.png" class="img-fluid d-sm-none d-inline-block">
-
             </a>
             <div>
               <h5 class="d-inline-block mb-0 mr-1 align-middle"><i class="fas fa-phone text-white"></i></h5>
               <h5 class="text-white font-weight-normal mr-2 d-lg-inline-block d-md-inline-block d-sm-inline-block d-none align-text-top">LLAMANOS</h5>
-              <button class="btn btn-outline-secondary btn-secondary-prosegur rounded-pill py-1 px-3 m-0"><h5 class="mb-0"><a href="#">0800-444-0190</a></h5></button>
+              <button class="btn btn-outline-secondary btn-secondary-prosegur rounded-pill py-1 px-3 m-0"><h5 class="mb-0"><a href="tel:0800 888 0190">0800-444-0190</a></h5></button>
             </div>
         </div>
       </nav>
@@ -47,19 +46,21 @@
                               <hr class="bg-white" />
                               <h4 class="h4 text-white font-weight-light pb-2">Te llamamos</h4>
                               <!-- Form -->
-                              <form>
+                              <form class="needs-validation" novalidate>
                                  <div class="form-row">
                                     <div class="form-group col">
-                                       <input type="tel" class="form-control form-control-lg" id="telefono" placeholder="Teléfono">
+                                      <input type="tel" class="form-control form-control-lg" id="telefono" placeholder="Teléfono" required>
+                                      <div class="invalid-feedback"><p class="mb-0 mt-2">Por favor, ingrese un número de teléfono válido.</p></div>
                                     </div>
                                  </div>
                                  <button type="submit" class="btn btn-primary btn-block btn-primary-prosegur btn-primary-banner-principal font-weight-bold btn-lg mb-3">ENVIAR</button>
                                  <div class="form-group py-1">
                                     <div class="form-check">
-                                       <input class="form-check-input" type="checkbox" id="gridCheck">
+                                       <input class="form-check-input" type="checkbox" id="gridCheck" required>
                                        <label class="form-check-label text-white" for="gridCheck">
                                        He leído y declaro conocer la Política de Privacidad de PROSEGUR
                                        </label>
+                                       <div class="invalid-feedback"><p class="mb-0 mt-2">Este campo es obligatorio.</p></div>
                                     </div>
                                  </div>
                               </form>
@@ -67,6 +68,7 @@
                         </div>
                      </div>
                   </div>
+
                   <!-- Item 2 -->
                   <div class="carousel-item">
                      <div class="container">
@@ -79,7 +81,7 @@
                               <hr class="bg-white" />
                               <h4 class="h4 text-white font-weight-light pb-2">Te llamamos</h4>
                               <!-- Form -->
-                              <form>
+                              <form class="needs-validation" novalidate>
                                  <div class="form-row">
                                     <div class="form-group col">
                                        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
@@ -90,49 +92,53 @@
                                  </div>
                                  <div class="form-row">
                                     <div class="form-group col">
-                                       <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+                                       <input type="tel" class="form-control" id="telefono" placeholder="Teléfono" required>
+                                       <div class="invalid-feedback"><p class="mb-0 mt-2">Ingrese un número de teléfono válido.</p></div>
                                     </div>
                                     <div class="form-group col">
-                                       <select id="localidad" class="form-control">
-                                          <option selected>Provincia</option>
-                                          <option>Buenos Aires</option>
-                                          <option>Capital Federal</option>
-                                          <option>Catamarca</option>
-                                          <option>Chaco</option>
-                                          <option>Chubut</option>
-                                          <option>Córdoba</option>
-                                          <option>Corrientes</option>
-                                          <option>Entre Ríos</option>
-                                          <option>Formosa</option>
-                                          <option>Jujuy</option>
-                                          <option>La Pampa</option>
-                                          <option>La Rioja</option>
-                                          <option>Mendoza</option>
-                                          <option>Misiones</option>
-                                          <option>Neuquén</option>
-                                          <option>Río Negro</option>
-                                          <option>Salta</option>
-                                          <option>San Juan</option>
-                                          <option>San Luis</option>
-                                          <option>Santa Cruz</option>
-                                          <option>Santa Fe</option>
-                                          <option>Santiago del Estero</option>
-                                          <option>Tierra del Fuego</option>
-                                          <option>Tucumán</option>
+                                       <select id="localidad" class="form-control" required>
+                                          <option value="">Provincia</option>
+                                          <option value="Buenos Aires">Buenos Aires</option>
+                                          <option value="Capital Federal">Capital Federal</option>
+                                          <option value="Catamarca">Catamarca</option>
+                                          <option value="Chaco">Chaco</option>
+                                          <option value="Chubut">Chubut</option>
+                                          <option value="Córdoba">Córdoba</option>
+                                          <option value="Corrientes">Corrientes</option>
+                                          <option value="Entre Ríos">Entre Ríos</option>
+                                          <option value="Formosa">Formosa</option>
+                                          <option value="Jujuy">Jujuy</option>
+                                          <option value="La Pampa">La Pampa</option>
+                                          <option value="La Rioja">La Rioja</option>
+                                          <option value="Mendoza">Mendoza</option>
+                                          <option value="Misiones">Misiones</option>
+                                          <option value="Neuquén">Neuquén</option>
+                                          <option value="Río Negro">Río Negro</option>
+                                          <option value="Salta">Salta</option>
+                                          <option value="San Juan">San Juan</option>
+                                          <option value="San Luis">San Luis</option>
+                                          <option value="Santa Cruz">Santa Cruz</option>
+                                          <option value="Santa Fe">Santa Fe</option>
+                                          <option value="Santiago del Estero">Santiago del Estero</option>
+                                          <option value="Tierra del Fuego">Tierra del Fuego</option>
+                                          <option value="Tucumán">Tucumán</option>
                                        </select>
+                                       <div class="invalid-feedback"><p class="mb-0 mt-2">Seleccione una opción.</p></div>
                                     </div>
                                  </div>
                                  <div class="form-row">
                                     <div class="form-group col">
-                                       <input type="email" class="form-control" id="email" placeholder="Email">
+                                       <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                       <div class="invalid-feedback"><p class="mb-0 mt-2">Ingrese un email válido</p></div>
                                     </div>
                                  </div>
                                  <div class="form-group py-1">
                                     <div class="form-check">
-                                       <input class="form-check-input" type="checkbox" id="gridCheck">
+                                       <input class="form-check-input" type="checkbox" id="gridCheck" required>
                                        <label class="form-check-label text-white" for="gridCheck">
-                                       Acepto los términos y condiciones de uso.
+                                       He leído y declaro conocer la Política de Privacidad de PROSEGUR
                                        </label>
+                                       <div class="invalid-feedback"><p class="mb-0 mt-2">Este campo es obligatorio.</p></div>
                                     </div>
                                  </div>
                                  <button type="submit" class="btn btn-primary btn-block btn-primary-prosegur btn-primary-banner-principal font-weight-bold btn-lg mb-3">ENVIAR</button>                            
@@ -140,10 +146,10 @@
                               </form>
                               <div class="row">
                                  <div class="col">
-                                    <a href="#" class="link-white"><u>¿Ya sos cliente?</u></a>
+                                    <a href="https://www.prosegur.com.ar/conocenos/contacta" class="link-white"><u>¿Ya sos cliente?</u></a>
                                  </div>
                                  <div class="col text-right">
-                                    <a href="#" class="link-white"><u>¿Buscás empleo?</u></a>
+                                    <a href="https://www.facebook.com/ProsegurEmpleosArgentina/" target="_blank" class="link-white"><u>¿Buscás empleo?</u></a>
                                  </div>
                               </div>
                            </div>
@@ -176,7 +182,7 @@
                    <img src="img/card_1.jpg" class="card-img-top">
                    <div class="card-body bg-lighter-prosegur px-xs-none">
                       <h5 class="h6-xs card-title font-weight-normal text-brown mb-3">Alarmas Monitoreadas</h5>
-                      <a href="#" class="btn btn-primary btn-primary-prosegur">Ver más</a>
+                      <a href="https://www.prosegur.com.ar/hogares-y-personas/prosegur-alarmas" class="btn btn-primary btn-primary-prosegur">Ver más</a>
                    </div>
                 </div>
              </div>
@@ -185,7 +191,7 @@
                    <img src="img/card_2.jpg" class="card-img-top">
                    <div class="card-body bg-lighter-prosegur px-xs-none">
                       <h5 class="h6-xs card-title font-weight-normal text-brown mb-3">Cámaras Monitoreadas</h5>
-                      <a href="#" class="btn btn-primary btn-primary-prosegur">Ver más</a>
+                      <a href="https://www.prosegur.com.ar/hogares-y-personas/camaras-monitoreadas" class="btn btn-primary btn-primary-prosegur">Ver más</a>
                    </div>
                 </div>
              </div>
@@ -194,7 +200,7 @@
                    <img src="img/card_3.jpg" class="card-img-top">
                    <div class="card-body bg-lighter-prosegur px-xs-none">
                       <h5 class="h6-xs card-title font-weight-normal text-brown mb-3">Ojo de<br class="d-sm-inline d-none"> Halcón</h5>
-                      <a href="#" class="btn btn-primary btn-primary-prosegur">Ver más</a>
+                      <a href="https://www.prosegur.com.ar/hogares-y-personas/seguridad-para-edificios-el-ojo-del-halcon" class="btn btn-primary btn-primary-prosegur">Ver más</a>
                    </div>
                 </div>
              </div>
@@ -203,7 +209,7 @@
                    <img src="img/card_4.jpg" class="card-img-top">
                    <div class="card-body bg-lighter-prosegur px-xs-none">
                       <h5 class="h6-xs card-title font-weight-normal text-brown mb-3">Cajas de Seguridad</h5>
-                      <a href="#" class="btn btn-primary btn-primary-prosegur">Ver más</a>
+                      <a href="https://www.prosegur.com.ar/hogares-y-personas/caja-de-seguridad-monitoreada" class="btn btn-primary btn-primary-prosegur">Ver más</a>
                    </div>
                 </div>
              </div>
@@ -212,7 +218,7 @@
                    <img src="img/card_5.jpg" class="card-img-top">
                    <div class="card-body bg-lighter-prosegur px-xs-none">
                       <h5 class="h6-xs card-title font-weight-normal text-brown mb-3">Localización Vehicular</h5>
-                      <a href="#" class="btn btn-primary btn-primary-prosegur">Ver más</a>
+                      <a href="https://www.prosegur.com.ar/hogares-y-personas/localizacion-vehicular" class="btn btn-primary btn-primary-prosegur">Ver más</a>
                    </div>
                 </div>
              </div>
@@ -310,7 +316,7 @@
             <div class="row">
 
               <div class="col-12">
-                <a href="#" class="link-brown "><p class="mb-3"><u>Terminos y condiciones de uso</u></p></a>
+                <a href="https://www.prosegur.com.ar/arg/legales.html" target="_blank" class="link-brown "><p class="mb-3"><u>Terminos y condiciones de uso</u></p></a>
               </div>  
 
               <div class="col-12">
@@ -333,5 +339,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+
   </body>
 </html>
