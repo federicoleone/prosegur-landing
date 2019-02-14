@@ -63,16 +63,6 @@ $(function(){
         }
       });
     });
-    
-    /*
-	$('#carousel-mainbanner').mouseover(function(){
-		$(this).carousel('pause');     
-	});    
-
-	$('#carousel-mainbanner').mouseleave(function(){
-		$(this).carousel('cycle');     
-	}); 
-	*/
 
     $('#carousel-mainbanner').find('input').on('click', function(){
         $('#carousel-mainbanner').carousel('pause')
