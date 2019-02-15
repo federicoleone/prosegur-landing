@@ -73,11 +73,11 @@ $(function(){
     });
 
     $('#carousel-mainbanner').find('input').on('touchstart', function () { 
-      $(this).carousel('pause');
+      $('#carousel-mainbanner').carousel('pause');
     });
 
     $('main').on('touchstart', function () { 
-      $(this).carousel('cycle');
+      $('#carousel-mainbanner').carousel('cycle');
     });
 
 
