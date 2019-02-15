@@ -67,12 +67,17 @@ $(function(){
       console.log('pausa')
     }, function () { 
       $(this).carousel('cycle') 
-      console.log('cicla')
+      console.log('cycle')
     });
 
-    $('#carousel-mainbanner').on('touchstart', function () { 
+    $('#carousel-mainbanner input').on('touchstart', function () { 
       $(this).carousel('pause') 
       console.log('pausa')
+    });
+
+    $('main').on('touchstart', function () { 
+      $(this).carousel('cycle') 
+      console.log('cycle')
     });
 
 });
