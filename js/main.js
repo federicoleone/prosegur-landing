@@ -62,12 +62,11 @@ $(function(){
 
     */
 
-
-    $('#carousel-mainbanner').carousel({
-      interval: 2000,
+    $('#carousel-mainbanner').hover(function () { 
+      $(this).carousel('pause') 
+    }, function () { 
+      $(this).carousel('cycle') 
     })
-
-    $('#carousel-mainbanner').carousel('pause');
 
 });
 
