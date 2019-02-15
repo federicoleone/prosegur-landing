@@ -62,10 +62,6 @@ $(function(){
 
     */
 
-    $('#carousel-mainbanner').carousel({
-        pause: "hover"
-    });
-
 });
 
 /* Validation */
