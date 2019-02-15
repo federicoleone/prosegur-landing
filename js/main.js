@@ -72,12 +72,12 @@ $(function(){
       $(this).carousel('cycle') 
     });
 
-    $('.form-control').on('touchstart', function () { 
-      $('#carousel-mainbanner').carousel('pause');
+    $('#carousel-mainbanner').on('touchstart', function () { 
+      $(this).carousel('pause');
     });
 
     $('main').on('touchstart', function () { 
-      $('#carousel-mainbanner').carousel('cycle');
+      $(this).carousel('cycle');
     });
 
 
