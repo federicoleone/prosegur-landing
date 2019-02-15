@@ -64,20 +64,18 @@ $(function(){
 
     $('#carousel-mainbanner').hover(function () { 
       $(this).carousel('pause') 
-      console.log('pausa')
     }, function () { 
       $(this).carousel('cycle') 
-      console.log('cycle')
     });
 
     $('#carousel-mainbanner input').on('touchstart', function () { 
-      $(this).carousel('pause') 
-      console.log('pausa')
+      $('#carousel-mainbanner').carousel('pause');
+      console.log('pausa');
     });
 
     $('main').on('touchstart', function () { 
-      $(this).carousel('cycle') 
-      console.log('cycle')
+      $(this).carousel('cycle');
+      console.log('cycle');
     });
 
 });
