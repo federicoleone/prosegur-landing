@@ -61,6 +61,10 @@ $(function(){
     });
 
     */
+    
+    $('#carousel-mainbanner').carousel({
+	  interval: 2000
+	})
 
     $('#carousel-mainbanner').hover(function () { 
       $(this).carousel('pause') 
@@ -70,13 +74,9 @@ $(function(){
 
     $('#carousel-mainbanner input').on('touchstart', function () { 
       $('#carousel-mainbanner').carousel('pause');
-      console.log('pausa');
     });
 
-    $('main').on('touchstart', function () { 
-      $(this).carousel('cycle');
-      console.log('cycle');
-    });
+
 
 });
 
