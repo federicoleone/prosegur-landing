@@ -62,10 +62,12 @@ $(function(){
 
     */
 
-    $('#carousel-mainbanner').hover(function () { 
+    $('#carousel-mainbanner').on('click mouseover', function () { 
       $(this).carousel('pause') 
+      console.log('pausa')
     }, function () { 
       $(this).carousel('cycle') 
+      console.log('cicla')
     })
 
 });
