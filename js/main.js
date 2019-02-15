@@ -62,6 +62,13 @@ $(function(){
 
     */
 
+
+    $('#carousel-mainbanner').carousel({
+      interval: 2000,
+    })
+
+    $('#carousel-mainbanner').carousel('pause');
+
 });
 
 /* Validation */
