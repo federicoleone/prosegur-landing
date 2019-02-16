@@ -74,9 +74,8 @@ $(function(){
       $(this).carousel('cycle') 
     });
 
-    $('#carousel-mainbanner input').on('touchstart', function () { 
+    $('#carousel-mainbanner').on('touchstart', function () { 
       carousel_mainbanner.carousel('pause');
-      console.log('stop');
     });
 
 
