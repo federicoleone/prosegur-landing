@@ -61,13 +61,13 @@ $(function(){
     });
 
     */
-
+/*
     $('.carousel').hover(function () { 
       $(this).carousel('pause') 
     }, function () { 
       $(this).carousel('cycle') 
     });
-
+*/
 
     $("input").on("touchstart", function(){
       $(".carousel").carousel("pause");
