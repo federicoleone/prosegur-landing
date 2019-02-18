@@ -69,7 +69,7 @@ $(function(){
     });
 */
 
-    $('input').on('touchstart', function () { 
+    $('input').on('click', function () { 
       $('.carousel').carousel({
         interval: false
       });
