@@ -70,7 +70,7 @@ $(function(){
       $(this).carousel('cycle') 
     });
 */
-    $('#carousel-mainbanner input').on('touchstart', function () { 
+    $('#carousel-mainbanner input').on('click', function () { 
       $('#carousel-mainbanner').carousel('pause');
     });
 
