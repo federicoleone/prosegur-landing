@@ -70,12 +70,14 @@ $(function(){
 */
 
 
+	$('.carousel').carousel({
+	  interval: 2000,
+	  pause: "hover",
+	});
 
 
     $("input").on('touchstart click', function(){      
-      setTimeout(function(){
-        $(".carousel").carousel("pause");
-      }, 500); 
+		$('.carousel').carousel('pause');
     });
 
 
