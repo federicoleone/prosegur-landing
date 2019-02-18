@@ -61,23 +61,19 @@ $(function(){
     });
 
     */
-
-    var carousel_mainbanner = $('#carousel-mainbanner');
-
-    $('#carousel-mainbanner').carousel({
-      interval: 5000
-    })
-
+/*
     $('#carousel-mainbanner').hover(function () { 
       $(this).carousel('pause') 
     }, function () { 
       $(this).carousel('cycle') 
     });
+*/
 
-    $('#carousel-mainbanner input').on('touchstart', function () { 
-      carousel_mainbanner.carousel({
+    $('input').on('touchstart', function () { 
+      $('.carousel').carousel({
         interval: false
       });
+      console.log('false')
     });
 
 
