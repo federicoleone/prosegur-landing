@@ -72,8 +72,10 @@ $(function(){
 
 
 
-    $("input").on('touchstart click', function(){
-      $(".carousel").carousel("pause");
+    $("input").on('touchstart click', function(){      
+      setTimeout(function(){
+        $(".carousel").carousel("pause");
+      }, 500); 
     });
 
 
