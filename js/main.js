@@ -70,10 +70,9 @@ $(function(){
       $(this).carousel('cycle') 
     });
 */
-    $('input').focus(function(){
+    $('input').on('click touch', function () {
        $("#carousel-mainbanner").carousel('pause');
-    }).blur(function() {
-       $("#carousel-mainbanner").carousel('cycle');
+       console.log('test stop');
     });
 
 
