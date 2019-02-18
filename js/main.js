@@ -62,15 +62,16 @@ $(function(){
 
     */
 /*
-    $('.carousel').hover(function () { 
+    $('#carousel-mainbanner').hover(function () { 
       $(this).carousel('pause') 
     }, function () { 
       $(this).carousel('cycle') 
     });
 */
 
-    $("input").on("touchstart", function(){
+    $("input").on('touchstart', function(){
       $(".carousel").carousel("pause");
+      alert('pause');
     });
 
 
