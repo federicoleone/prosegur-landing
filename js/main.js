@@ -72,7 +72,7 @@ $(function(){
 
 
 
-    $("input").on('click touch', function(){
+    $("input").on('touchstart click', function(){
       $(".carousel").carousel("pause");
       alert('pause');
     });
