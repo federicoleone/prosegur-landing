@@ -69,11 +69,13 @@ $(function(){
     });
 */
 
-});
+    $("input").on('touchstart', function(){
+      $(".carousel").carousel("pause");
+    });
 
-  $("input").on('touchstart', function(){
-    $(".carousel").carousel("pause");
-  });
+
+
+});
 
 /* Validation */
 (function() {
