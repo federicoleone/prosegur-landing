@@ -69,11 +69,9 @@ $(function(){
     });
 */
 
-    $('input').on('click', function () { 
-      $('.carousel').carousel({
-        interval: false
-      });
-      console.log('false')
+    $('.carousel').click(function () { 
+      $(this).carousel('pause');
+      alert('false');
     });
 
 
