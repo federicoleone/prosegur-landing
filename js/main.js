@@ -71,7 +71,6 @@ $(function(){
 
     $("input").on('touchstart', function(){
       $(".carousel").carousel("pause");
-      alert('pause');
     });
 
 
