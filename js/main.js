@@ -69,11 +69,13 @@ $(function(){
     });
 */
 
-    $('.carousel').click(function () { 
-      $(this).carousel('pause');
-      alert('false');
-    });
 
+
+
+    $("input").on('click touch', function(){
+      $(".carousel").carousel("pause");
+      alert('pause');
+    });
 
 
 
