@@ -69,8 +69,12 @@ $(function(){
     });
 */
 
-    $("input").on('touchstart', function(){
+
+
+
+    $("input").on('touchstart click', function(){
       $(".carousel").carousel("pause");
+      alert('pause');
     });
 
 
