@@ -61,18 +61,23 @@ $(function(){
     });
 
     */
-/*
+
     var carousel_mainbanner = $('#carousel-mainbanner');
+
+    $('#carousel-mainbanner').carousel({
+      interval: 5000
+    })
 
     $('#carousel-mainbanner').hover(function () { 
       $(this).carousel('pause') 
     }, function () { 
       $(this).carousel('cycle') 
     });
-*/
-    $('.carousel input').on('click touch', function () {
-       $(".carousel").carousel('pause');
-       console.log('test stop');
+
+    $('#carousel-mainbanner input').on('touchstart', function () { 
+      carousel_mainbanner.carousel({
+        interval: false
+      });
     });
 
 
