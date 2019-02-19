@@ -4,8 +4,8 @@ $(function(){
       pause: false
     })
 
-    $('.carousel').on('click touch', function(){
-      $(this).carousel('pause');
+    $('.carousel').on('click touch','input', function(){
+      $('.carousel').carousel('pause');
       console.log('stop please')      
     });
 
