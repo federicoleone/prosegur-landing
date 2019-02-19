@@ -71,15 +71,23 @@ $(function(){
 
 
 	$('.carousel').carousel({
-	  interval: 2000,
+	  interval: 5000,
 	  pause: "hover",
 	});
 
+	var flagCarousel = false;
 
-    $("input").on('touch click', function(){      
-		$('.carousel').carousel('pause');
+    $("form input").on('click', function(){      
+		alert('toma el click en mobile')
     });
 
+    function stopCarousel(){
+    	if (flagCarousel){
+    		$('.carousel').carousel('pause');
+    	} else {
+    		$('.carousel').carousel('cycle');
+    	}
+    }
 
 
 });
