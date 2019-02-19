@@ -1,10 +1,16 @@
 $(function(){
 
-
+    /* Carousel Stop Cycle on click Mobile*/
     $('.carousel').on('tap','input', function(){
       $('.carousel').carousel('pause');
       console.log('stop please')      
     });
+
+    $('.carousel').hover(function () { 
+      $(this).carousel('pause') 
+    }, function () { 
+      $(this).carousel('cycle') 
+    });    
 
 
     /* Header add bg black */
