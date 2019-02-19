@@ -39,6 +39,11 @@ $(function(){
     /* AOS */
     AOS.init();
 
+    $('.carousel').carousel({
+      interval: 5000,
+      hover: false
+    })
+
     $('.carousel').hover(function () { 
       $(this).carousel('pause') 
     }, function () { 
@@ -47,33 +52,8 @@ $(function(){
 
     $('.carousel input').click(function(){
       $(".carousel").carousel('pause');
+      console.log('clicked')
     })
-
-
-    /* Visible el on screen 
-    $.fn.isInViewport = function() {
-      var elementTop = $(this).offset().top;
-      var elementBottom = elementTop + $(this).outerHeight();
-
-      var viewportTop = $(window).scrollTop();
-      var viewportBottom = viewportTop + $(window).height();
-
-      return elementBottom > viewportTop && elementTop < viewportBottom;
-    };
-
-    $(window).on('resize scroll', function() {
-      $('#carousel-mainbanner').each(function() {
-        if ($(this).isInViewport()) {
-            $(this).carousel('cycle');
-        } else {
-            $(this).carousel('pause');
-        }
-      });
-    });
-
-    */
-
-
 
 });
 
