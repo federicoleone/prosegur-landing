@@ -44,16 +44,7 @@ $(function(){
       hover: false
     })
 
-    $('.carousel').hover(function () { 
-      $(this).carousel('pause') 
-    }, function () { 
-      $(this).carousel('cycle') 
-    });
-
-    $('.carousel input').click(function(){
-      $(".carousel").carousel('pause');
-      console.log('clicked')
-    })
+    $(".carousel").carousel('pause');
 
 });
 
