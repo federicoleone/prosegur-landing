@@ -69,7 +69,7 @@ $(function(){
     });
 */
 
-    $("input").click(function(){
+    $("form").click(function(){
       $(".carousel").carousel('pause');
     });
 
