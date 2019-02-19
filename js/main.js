@@ -1,10 +1,7 @@
 $(function(){
 
-    $('.carousel').carousel({
-      pause: false
-    })
 
-    $('.carousel').on('click touch','input', function(){
+    $('.carousel').on('tap','input', function(){
       $('.carousel').carousel('pause');
       console.log('stop please')      
     });
