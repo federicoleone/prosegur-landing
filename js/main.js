@@ -70,25 +70,17 @@ $(function(){
 */
 
 
-	$('.carousel').carousel({
-	  interval: 5000,
-	  pause: "hover",
-	});
+  	$('.carousel').carousel({
+  	  interval: 5000,
+  	  pause: "hover",
+  	});
 
-	var flagCarousel = false;
-
-    $("form input").vclick(function(){
-    	flagCarousel = true;
-		stopCarousel(flagCarousel);
+    $("form input").click(function(){
+      $('.carousel').carousel('pause');
+      console.log('touched')
+      return false;      
     });
 
-    function stopCarousel(flagCarousel){
-    	if (flagCarousel){
-    		$('.carousel').carousel('pause');
-    	} else {
-    		$('.carousel').carousel('cycle');
-    	}
-    }
 
 
 });
