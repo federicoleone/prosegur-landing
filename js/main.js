@@ -69,14 +69,8 @@ $(function(){
     });
 */
 
-
-  	$('.carousel').carousel({
-  	  interval: 5000,
-  	  pause: "hover",
-  	});
-
-    $("form input").on("touchstart click", function(){
-      $('.carousel').carousel('pause');
+    $("input").click(function(){
+      $(".carousel").carousel('pause');
     });
 
 
