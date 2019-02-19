@@ -71,13 +71,18 @@ $(function(){
 
     var carousel = $(".carousel");
 
-    function carouselStop(){
+    function carouselStop(){      
+      carousel.carousel({
+        interval: false,
+        pause: false
+      })
       carousel.carousel('pause');
+      console.log('touch');
     }
 
     $('form input').tap(function(){
       carouselStop();
-      console.log('touch');
+      
     });
 
 
