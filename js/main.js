@@ -73,14 +73,15 @@ $(function(){
 
     carousel.carousel({
       interval: 5000,
-      pause: false
     })
 
     function carouselStop(){     
       carousel.carousel('pause');
       carousel.carousel({
+        pause: true,
         interval: false
       })
+      console.log('paro el slide')
     }
 
 
