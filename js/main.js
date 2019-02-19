@@ -77,7 +77,7 @@ $(function(){
 
 	var flagCarousel = false;
 
-    $("form input").on('click', function(){
+    $("form input").vclick(function(){
     	flagCarousel = true;
 		stopCarousel(flagCarousel);
     });
