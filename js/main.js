@@ -75,7 +75,7 @@ $(function(){
       carousel.carousel('pause');
     }
 
-    $('form').on('tap', 'input', function(){
+    $('form input').tap(function(){
       carouselStop();
       console.log('touch');
     });
