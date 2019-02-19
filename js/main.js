@@ -72,7 +72,8 @@ $(function(){
     var carousel = $(".carousel");
 
     carousel.carousel({
-      interval: 5000
+      interval: 5000,
+      pause: false
     })
 
     function carouselStop(){     
