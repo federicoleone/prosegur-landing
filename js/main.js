@@ -69,12 +69,16 @@ $(function(){
     });
 */
 
+    var carousel = $(".carousel");
+
+    function carouselStop(){
+      carousel.carousel('pause');
+    }
+
     $('form').on('click', 'input', function(){
-      $(".carousel").carousel('pause');
+      carouselStop();
       console.log('touch');
     });
-
-
 
 
 });
