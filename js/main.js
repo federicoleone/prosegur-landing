@@ -39,6 +39,16 @@ $(function(){
     /* AOS */
     AOS.init();
 
+    $('.carousel').hover(function () { 
+      $(this).carousel('pause') 
+    }, function () { 
+      $(this).carousel('cycle') 
+    });
+
+    $('.carousel input').click(function(){
+      $(".carousel").carousel('pause');
+    })
+
 
     /* Visible el on screen 
     $.fn.isInViewport = function() {
@@ -62,19 +72,6 @@ $(function(){
     });
 
     */
-
-  $('.carousel').hover(function () { 
-    $(this).carousel('pause') 
-  }, function () { 
-    $(this).carousel('cycle') 
-  });
-
-  $('.carousel input').click(function(){
-    $(".carousel").carousel('pause');
-  })
-
-
-    
 
 
 
