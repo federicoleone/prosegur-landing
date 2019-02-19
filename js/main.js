@@ -70,24 +70,8 @@ $(function(){
 */
 
     var carousel = $(".carousel");
+    carousel.carousel('pause');
 
-    carousel.carousel({
-      interval: 5000,
-    })
-
-    function carouselStop(){     
-      carousel.carousel('pause');
-      carousel.carousel({
-        pause: false,
-        interval: false
-      })
-      console.log('paro el slide')
-    }
-
-
-    $('form input').tap(function(e) { 
-        carouselStop();
-    });
 
 
 
