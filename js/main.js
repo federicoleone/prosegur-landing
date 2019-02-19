@@ -39,6 +39,7 @@ $(function(){
     /* AOS */
     AOS.init();
 
+
     /* Visible el on screen 
     $.fn.isInViewport = function() {
       var elementTop = $(this).offset().top;
@@ -61,20 +62,19 @@ $(function(){
     });
 
     */
-/*
-    $('#carousel-mainbanner').hover(function () { 
-      $(this).carousel('pause') 
-    }, function () { 
-      $(this).carousel('cycle') 
-    });
-*/
+
+  $('.carousel').hover(function () { 
+    $(this).carousel('pause') 
+  }, function () { 
+    $(this).carousel('cycle') 
+  });
+
+  $('.carousel input').click(function(){
+    $(".carousel").carousel('pause');
+  })
+
 
     
-    $('.carousel').carousel({
-      pause: false
-    })
-
-    $(".carousel").carousel('pause');
 
 
 
