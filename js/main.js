@@ -1,5 +1,15 @@
-
 $(function(){
+
+    $('.carousel').carousel({
+      pause: false
+    })
+
+    $('.carousel').click(function(){
+      $(this).carousel('pause');
+      console.log('stop please')      
+    });
+
+
     /* Header add bg black */
     function nav_scroll_bg(){
         if ($(window).scrollTop() > 30) {
@@ -39,12 +49,9 @@ $(function(){
     /* AOS */
     AOS.init();
 
-    $('.carousel').carousel({
-      interval: 5000,
-      hover: false
-    })
 
-    $(".carousel").carousel('pause');
+
+
 
 });
 
