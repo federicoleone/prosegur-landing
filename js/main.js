@@ -69,9 +69,11 @@ $(function(){
     });
 */
 
-    $("form").click(function(){
+    $('form').on('click', 'input', function(){
       $(".carousel").carousel('pause');
+      console.log('touch');
     });
+
 
 
 
