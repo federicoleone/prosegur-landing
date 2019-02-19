@@ -1,4 +1,5 @@
 @media (max-width: 575px) {
+	/* Paddings Mobile */
 	.pl-xs-none,
 	.px-xs-none{
 		padding-left: 0 !important;
@@ -19,12 +20,17 @@
 		padding-bottom: 0 !important;
 	}
 
+	/* Titles */
 	.h6-xs{
 		font-size: 1rem;
 	}
+
+	.p-small-xs{
+	    font-size: 0.9rem;
+	}
 }
 
-.invalid-feedback,
-.form-check-input.is-invalid ~ .form-check-label, .was-validated .form-check-input:invalid ~ .form-check-label{
-	color:$red-error !important;
+/* Cursor */
+.cursor_pointer{
+	cursor: pointer;
 }

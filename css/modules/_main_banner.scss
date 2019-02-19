@@ -10,11 +10,16 @@ header{
 	}
 }
 
-
 .main-banner{
 	.main-banner-img{
 		-webkit-box-shadow: 10px 10px 40px -15px rgba(0,0,0,0.75);
 		-moz-box-shadow: 10px 10px 40px -15px rgba(0,0,0,0.75);
 		box-shadow: 10px 10px 40px -15px rgba(0,0,0,0.75);
 	}
+}
+
+/* Color error on forms*/
+.invalid-feedback,
+.form-check-input.is-invalid ~ .form-check-label, .was-validated .form-check-input:invalid ~ .form-check-label{
+	color:$red-error !important;
 }

@@ -75,10 +75,8 @@ $(function(){
   	  pause: "hover",
   	});
 
-    $("form input").click(function(){
+    $("form input").on("touchstart click", function(){
       $('.carousel').carousel('pause');
-      console.log('touched')
-      return false;      
     });
 
 
