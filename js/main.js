@@ -69,9 +69,12 @@ $(function(){
     });
 */
 
-    var carousel = $(".carousel");
-    carousel.carousel('pause');
+    
+    $('.carousel').carousel({
+      pause: false
+    })
 
+    $(".carousel").carousel('pause');
 
 
 
