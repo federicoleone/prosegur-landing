@@ -77,11 +77,12 @@ $(function(){
 
 	var flagCarousel = false;
 
-    $("form input").on('click', function(){      
-		alert('toma el click en mobile')
+    $("form input").on('click', function(){
+    	flagCarousel = true;
+		stopCarousel(flagCarousel);
     });
 
-    function stopCarousel(){
+    function stopCarousel(flagCarousel){
     	if (flagCarousel){
     		$('.carousel').carousel('pause');
     	} else {
