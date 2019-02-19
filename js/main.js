@@ -78,7 +78,7 @@ $(function(){
     function carouselStop(){     
       carousel.carousel('pause');
       carousel.carousel({
-        pause: true,
+        pause: false,
         interval: false
       })
       console.log('paro el slide')
