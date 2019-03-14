@@ -1,5 +1,5 @@
+/* Paddings Mobile */
 @media (max-width: 575px) {
-	/* Paddings Mobile */
 	.pl-xs-none,
 	.px-xs-none{
 		padding-left: 0 !important;
@@ -19,8 +19,26 @@
 	.py-xs-none{
 		padding-bottom: 0 !important;
 	}
+}
 
-	/* Titles */
+/* Hidden Mobile */
+@media (max-width: 575px) {
+	.hidden-xs{
+		display: none;
+	}
+}
+
+
+/* Titles */
+.p-small{
+    font-size: 0.9rem;
+}
+
+@media (max-width: 575px) {
+	.h1-xs{
+		font-size: 2.1rem;
+	}
+
 	.h6-xs{
 		font-size: 1rem;
 	}
@@ -29,6 +47,7 @@
 	    font-size: 0.9rem;
 	}
 }
+
 
 /* Cursor */
 .cursor_pointer{

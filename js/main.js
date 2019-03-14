@@ -12,6 +12,28 @@ $(function(){
       $(this).carousel('cycle') 
     });    
 
+    /* Visible el on screen*/
+    $.fn.isInViewport = function() {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
+
+    $(window).on('resize scroll', function() {
+      $('.carousel').each(function() {
+        if ($(this).isInViewport()) {
+            $(this).carousel('cycle');
+        } else {
+            $(this).carousel('pause');
+        }
+      });
+    });
+
+
 
     /* Header add bg black */
     function nav_scroll_bg(){
@@ -53,7 +75,18 @@ $(function(){
     AOS.init();
 
 
+    /* Scroll Link*/
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
 
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    
 
 
 });

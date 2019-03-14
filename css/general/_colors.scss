@@ -28,6 +28,12 @@ $red-error:#ef5350;
 
 .yellow-prosegur{color:$yellow-prosegur;}
 
+.hover-yellow-prosegur{
+	&:hover{
+		color:$yellow-prosegur !important;
+	}
+}
+
 .bg-yellow-prosegur{
 	background-color: $yellow-prosegur;
 }
