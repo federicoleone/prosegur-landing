@@ -1,0 +1,252 @@
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100vh;
+    z-index: 1040;
+    background: #fff;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #7386D5;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    background: #fff;
+    color: #7386D5;
+}
+
+.overlay {
+    pointer-events: none;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 1035;
+     display: inline-block;
+     overflow: auto;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#sidebar .sidebar-header {
+    padding: 15px 10px 5px;
+    background: #fff;
+}
+
+.cta_close {
+    width: 40px;
+    float: right;
+    cursor: pointer;
+}
+
+#sidebar .sidebar-header h3 .cta_close {
+    z-index: 4;
+}
+
+#sidebar ul.components {
+    margin: 40px 0 0;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* SideBar
+================================================*/
+#sidebar.active.sidebar-prosegur li a,
+#sidebar.sidebar-prosegur li a{
+    color: #adadad;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+}
+
+    #sidebar.sidebar-prosegur > .list-unstyled > li > a{
+        margin-top: 15px;    
+    }
+
+    #sidebar.active.sidebar-prosegur ul li a:hover,
+    #sidebar.sidebar-prosegur ul li a:hover {
+        color: #444444;
+        text-decoration: none;
+    }
+
+    #sidebar.sidebar-prosegur li a.dropdown-toggle{
+        color: #444444;
+        position: relative;
+    }
+
+    #sidebar.sidebar-prosegur li a[aria-expanded="false"]{
+        color: #adadad;
+    }
+
+        /* List style */
+        #sidebar.sidebar-prosegur ul ul{
+            background-color: #f3f3f3;
+            padding: 6px 0;
+        }
+
+        #sidebar.sidebar-prosegur ul ul a{
+            font-size: 12px;
+            line-height: 17px;
+            padding: 10px 10px 10px 66px; 
+            color: #444444;     
+        }
+
+        .dropdown-toggle.dropdown-toggle-prosegur::before {
+            position: absolute;
+            right: 26px;
+            top: 0;
+            bottom: 1px;
+            margin: auto;           
+        }
+
+        .dropdown-toggle.dropdown-toggle-prosegur::after{
+            right: 25px;
+        }
+
+        .dropdown-toggle.dropdown-toggle-prosegur::before {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: .255em;
+            vertical-align: .255em;
+            content: "";
+            border-top: .3em solid transparent;
+            border-right: 0;
+            border-bottom: .3em solid transparent;
+            border-left: .3em solid;
+        }
+
+        #sidebar.sidebar-prosegur li a[aria-expanded="false"]::before{          
+            display:  inline-block;
+        }
+
+        #sidebar.sidebar-prosegur li a[aria-expanded="true"]::before{
+            display:  none;
+        }
+
+        #sidebar.sidebar-prosegur li a[aria-expanded="false"]::after{
+            display:  none;
+        }
+
+        #sidebar.sidebar-prosegur li a[aria-expanded="true"]::after{
+            display:  inline-block;
+        }
+
+#sidebar ul li a i{
+    margin: 0 15px 0 10px;
+    font-size: 21px;
+}
+
+
+/* List inside menu
+=================================================*/
+#sidebar.sidebar-prosegur li .container-collapse{
+    transition: all 0.3s;
+}
+

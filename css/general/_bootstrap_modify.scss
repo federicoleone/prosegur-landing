@@ -53,3 +53,11 @@
 .cursor_pointer{
 	cursor: pointer;
 }
+
+/* IE d-flex FIX */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.card{
+		flex: 1;
+		display: block;
+	}
+}

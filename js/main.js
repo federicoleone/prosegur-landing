@@ -44,11 +44,11 @@ $(function(){
         }       
     }
 
-	nav_scroll_bg();
+    nav_scroll_bg();
 
-	$(window).scroll(function(){
-		nav_scroll_bg();
-	});	
+    $(window).scroll(function(){
+    	nav_scroll_bg();
+    });	
 	
 
     /* Silder */
@@ -70,14 +70,15 @@ $(function(){
         }, 1000);
     });
 
-    /* Scroll Link*/
-    $(document).on('click', 'a[href^="#"]', function (event) {
+    /* Scroll Link */
+    $(document).on('click', 'header a[href^="#"], main a[href^="#"]', function (event) {
         event.preventDefault();
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
     });
+
 
     
 
@@ -104,7 +105,7 @@ $(function(){
 })();
 
 
-/* AOS */
+
 $(function() {
   AOS.init();
 });
