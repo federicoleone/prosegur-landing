@@ -142,7 +142,7 @@
                    </a>
                    <div>
                       <h5 class="d-inline-block mb-0 mr-1 align-middle"><i class="fas fa-phone text-white"></i></h5>
-                      <h5 class="text-white font-weight-normal mr-2 d-lg-inline-block d-md-inline-block d-sm-inline-block d-none align-text-top">LLAMANOS</h5>
+                      <h5 class="text-white font-weight-normal mr-2 mr-sm-0 mr-md-2 mr-lg-2 d-lg-inline-block d-md-inline-block d-sm-inline-block d-none align-text-top">LLAMANOS</h5>
                       <button class="btn btn-outline-secondary btn-secondary-prosegur rounded-pill py-1 px-2 m-0">
                          <h5 class="mb-0"><a href="tel:0800 888 0190">0800-444-0190</a></h5>
                       </button>
@@ -449,6 +449,9 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
+            $('.carousel').carousel({
+              interval: 2000
+            })
 
             $('.cta_close, .overlay').on('click', function () {
                 $('#sidebar').removeClass('active');
