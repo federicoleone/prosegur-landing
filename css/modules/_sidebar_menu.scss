@@ -81,9 +81,7 @@
     z-index: 4;
 }
 
-#sidebar ul.components {
-    margin: 40px 0 0;
-}
+#sidebar ul.components {}
 
 #sidebar ul p {
     color: #fff;
@@ -166,7 +164,7 @@ a.article:hover {
 }
 
     #sidebar.sidebar-prosegur > .list-unstyled > li > a{
-        margin-top: 15px;    
+        margin-top: 13px;    
     }
 
     #sidebar.active.sidebar-prosegur ul li a:hover,
@@ -193,7 +191,6 @@ a.article:hover {
         #sidebar.sidebar-prosegur ul ul a{
             font-size: 12px;
             line-height: 17px;
-            padding: 10px 10px 10px 66px; 
             color: #444444;     
         }
 

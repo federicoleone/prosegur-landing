@@ -1,3 +1,28 @@
+/*Margins*/
+.m-4-5 {
+  margin: 2.5rem !important;
+}
+
+.mt-4-5,
+.my-4-5 {
+  margin-top: 2.5rem !important;
+}
+
+.mr-4-5,
+.mx-4-5 {
+  margin-right: 2.5rem !important;
+}
+
+.mb-4-5,
+.my-4-5 {
+  margin-bottom: 2.5rem !important;
+}
+
+.ml-4-5,
+.mx-4-5 {
+  margin-left: 2.5rem !important;
+}
+
 /* Paddings Mobile */
 @media (max-width: 575px) {
 	.pl-xs-none,
@@ -32,6 +57,10 @@
 /* Titles */
 .p-small{
     font-size: 0.9rem;
+}
+
+.p-extrasmall{
+    font-size: 0.8rem;
 }
 
 @media (max-width: 575px) {

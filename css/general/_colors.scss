@@ -6,7 +6,11 @@ $brown-prosegur:#795548;
 $bg-light-prosegur: #f1f1f1;
 $bg-lighter-prosegur: #fbfbfb;
 $red-error:#ef5350;
+$light-gray: #adadad;
 
+.text-black{color:$color-black;}
+.text-brown{color: $brown-prosegur;}
+.text-light-gray{color: $light-gray;}
 
 .link-white{
 	color: $color-white;
@@ -15,9 +19,7 @@ $red-error:#ef5350;
 	}
 }
 
-.text-black{color:$color-black;}
 
-.text-brown{color: $brown-prosegur;}
 
 .link-brown{
 	color: $brown-prosegur;
