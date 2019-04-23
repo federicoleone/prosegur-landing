@@ -577,16 +577,39 @@
               autoplay: false,
               responsive: [
                 {
+                  breakpoint: 2560,
+                  settings: {
+                    swipe: false,
+                    touchMove: false,
+                    arrows: false,
+                    centerMode: true,
+                    infinite: false,
+                    initialSlide: 1,
+                    dots: false,
+                    speed: 300,
+                    slidesToShow: 2,
+                    variableWidth: true,
+                    autoplay: false
+                  }
+                },
+                {
                   breakpoint: 426,
                   settings: {
+                    swipe: true,
+                    touchMove: true,
+                    arrows: true,
                     centerMode: false,
-
                     initialSlide: 0,
                     slidesToShow: 2
                   }
                 }
               ]
             });
+
+            $(window).resize(function() {
+              $('.variable-width').slick('resize');
+            });    
+            
 
         });
 
