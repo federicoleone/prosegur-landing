@@ -8,14 +8,14 @@
   margin-top: 2.5rem !important;
 }
 
-.mr-4-5,
-.mx-4-5 {
-  margin-right: 2.5rem !important;
-}
-
 .mb-4-5,
 .my-4-5 {
   margin-bottom: 2.5rem !important;
+}
+
+.mr-4-5,
+.mx-4-5 {
+  margin-right: 2.5rem !important;
 }
 
 .ml-4-5,
@@ -44,6 +44,16 @@
 	.py-xs-none{
 		padding-bottom: 0 !important;
 	}
+
+	.pr-xs-4-5,
+	.px-xs-4-5 {
+	  padding-right: 2rem !important;
+	}
+
+	.pl-xs-4-5,
+	.px-xs-4-5 {
+	  padding-left: 2rem !important;
+	}
 }
 
 /* Hidden Mobile */
@@ -61,6 +71,7 @@
 
 .p-extrasmall{
     font-size: 0.8rem;
+    line-height: normal;
 }
 
 @media (max-width: 575px) {

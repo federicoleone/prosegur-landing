@@ -5,12 +5,26 @@ $yellow-prosegur-hover: #ffa500;
 $brown-prosegur:#795548;
 $bg-light-prosegur: #f1f1f1;
 $bg-lighter-prosegur: #fbfbfb;
+$bg-dark-prosegur: #565656;
 $red-error:#ef5350;
 $light-gray: #adadad;
+$light-gray-bg: #dedede;
+
 
 .text-black{color:$color-black;}
 .text-brown{color: $brown-prosegur;}
 .text-light-gray{color: $light-gray;}
+.yellow-prosegur{color:$yellow-prosegur;}
+
+
+.link-yellow-prosegur{
+	color:$yellow-prosegur !important;
+	&:hover{
+		color:$yellow-prosegur !important;
+		text-decoration: underline;
+	}
+}
+
 
 .link-white{
 	color: $color-white;
@@ -19,8 +33,6 @@ $light-gray: #adadad;
 	}
 }
 
-
-
 .link-brown{
 	color: $brown-prosegur;
 	&:hover{
@@ -28,7 +40,12 @@ $light-gray: #adadad;
 	}
 }
 
-.yellow-prosegur{color:$yellow-prosegur;}
+.link-black{
+	color: $color-black;
+	&:hover{
+		color:$bg-dark-prosegur;
+	}
+}
 
 .hover-yellow-prosegur{
 	&:hover{
@@ -36,9 +53,16 @@ $light-gray: #adadad;
 	}
 }
 
+
+
 .bg-yellow-prosegur{
 	background-color: $yellow-prosegur;
 }
+
+.bg-brown{
+	background-color: $brown-prosegur;
+}
+
 
 .bg-light-prosegur{
 	background-color: $bg-light-prosegur;
@@ -48,6 +72,9 @@ $light-gray: #adadad;
 	background-color: $bg-lighter-prosegur;
 }
 
+.bg-gray-prosegur{
+	background-color: $light-gray-bg;
+}
 
 .bg-gradient-violet{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#444b67+0,2c3141+50,16171d+100 */
