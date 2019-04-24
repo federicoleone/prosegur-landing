@@ -531,6 +531,7 @@
                 <div class="row justify-content-center">
                    <div style="background-image: url('img/bg_conectate.jpg')" class="col-lg-6 col-md-12 col-sm-12 col-12 img-background-cover"></div>
                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 text-white p-lg-5 p-md-5 p-sm-5 p-4">
+                    <div class="mr-lg-5 pr-lg-2">
                       <h4 class="yellow-prosegur">Conectate a tu tranquilidad</h4>
                       <p>Con Prosegur Smart tenés el control estés donde estés, a que te permite fácilmente saber lo que sucede en tu casa o edificio desde tu smartphone.</p>
                       <ul>
@@ -544,6 +545,7 @@
                          <li>Ingresá al portal de clientes Prosegur (www.prosegur.com.ar) para crear tu usuario y contraseña (en caso de no tener uno).</li>
                          <li>Pulsá el icono Prosegur Smart e introducí tu usuario y contraseña. ¡Listo!</li>
                       </ul>
+                    </div>
                    </div>
                 </div>
              </section>
@@ -645,12 +647,15 @@
 
             /* Slick slider*/
             $('.variable-width').slick({
+              swipe: false,
+              touchMove: false,
+              arrows: false,
               centerMode: true,
-              infinite: true,
+              infinite: false,
               initialSlide: 1,
               dots: false,
               speed: 300,
-              slidesToShow: 3,
+              slidesToShow: 2,
               variableWidth: true,
               autoplay: false,
               responsive: [
@@ -676,9 +681,14 @@
                     swipe: true,
                     touchMove: true,
                     arrows: true,
+                    infinite: true,
                     centerMode: false,
                     initialSlide: 0,
-                    slidesToShow: 2
+                    dots: false,
+                    speed: 300,
+                    slidesToShow: 2,
+                    variableWidth: true,
+                    autoplay: false
                   }
                 }
               ]
