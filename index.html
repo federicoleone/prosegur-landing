@@ -634,7 +634,7 @@
             $('.cta_close, .overlay').on('click', function () {
                 $('#sidebar').removeClass('active');
                 $('.overlay').removeClass('active');
-                $('body').css('overflow', 'auto');
+                $('body').removeClass('overflow-hidden');
             });
 
             $('#sidebarCollapse').on('click', function () {
@@ -642,7 +642,7 @@
                 $('.overlay').addClass('active');
                 $('.collapse.in').toggleClass('in');
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                $('body').css('overflow', 'hidden');
+                $('body').addClass('overflow-hidden');
             });
 
             /* Slick slider*/
