@@ -54,6 +54,16 @@
 	.px-xs-4-5 {
 	  padding-left: 2rem !important;
 	}
+
+	.pt-xs-4-5,
+	.py-xs-4-5 {
+	  padding-top: 2rem !important;
+	}
+
+	.pb-xs-4-5,
+	.py-xs-4-5 {
+	  padding-bottom: 2rem !important;
+	}
 }
 
 /* Hidden Mobile */
@@ -80,7 +90,7 @@
 	}
 
 	.h6-xs{
-		font-size: 1rem;
+		font-size: 0.9rem;
 	}
 
 	.p-small-xs{
