@@ -18,13 +18,13 @@
       <nav class="navbar fixed-top px-0 nav-landing">
         <div class="container" data-aos="fade-down" data-aos-duration="1000">
             <a href="/" class="navbar-brand m-0 mr-auto">
-                <img src="img/logo_prosegur.svg" class="img-fluid d-sm-inline-block d-none" width="160">
+                <img src="img/logo_prosegur_alarmas.svg" class="img-fluid d-sm-inline-block d-none" width="160">
                 <img src="img/logo_prosegur_small.svg" class="img-fluid d-sm-none d-inline-block" width="47">
             </a>
             <div>
               <h5 class="d-inline-block mb-0 mr-1 align-middle"><i class="fas fa-phone text-white"></i></h5>
-              <h5 class="text-white font-weight-normal mr-2 d-lg-inline-block d-md-inline-block d-sm-inline-block d-none align-text-top">LLAMANOS</h5>
-              <button class="btn btn-outline-secondary btn-secondary-prosegur rounded-pill py-1 px-3 m-0"><h5 class="mb-0"><a href="tel:902577999">902 577 999</a></h5></button>
+              <h5 class="text-white font-weight-normal mr-1 d-flexg-inline-block d-md-inline-block d-sm-inline-block d-none align-text-top">Línea Exclusiva de Venta</h5>
+              <button class="btn btn-outline-secondary btn-secondary-prosegur rounded-pill py-1 px-3 m-0"><h5 class="mb-0"><a href="tel:902577999">0800 444 0190</a></h5></button>
             </div>
         </div>
       </nav>
@@ -34,7 +34,7 @@
           <section class="nav-features-desktop">
             <ul class="list-unstyled text-center mb-0">
               <li class="mb-2">
-                <a href="#">
+                <a href="https://www.prosegur.com.ar/conocenos/contacta" target="_blank">
                   <div class="btn btn-block bg-gray-prosegur d-flex">
                     <div class="align-self-center">
                       <h4 class="mb-1"><i class="fas fa-street-view"></i></h4>
@@ -44,7 +44,7 @@
                 </a>
               </li>
               <li class="mb-2">
-                <a href="#">
+                <a href="https://www.facebook.com/ProsegurEmpleosArgentina/" target="_blank">
                   <div class="btn btn-block bg-brown text-white d-flex">
                     <div class="align-self-center">
                       <h4 class="mb-1"><i class="fas fa-briefcase"></i></h4>
@@ -59,11 +59,11 @@
           <section class="container-fluid nav-features-mobile bg-white border-top border-secondary">
             <div class="container">
               <div class="variable-width slider my-3">
-                <a href="#" class="px-4 link-black border-right border-secondary">
+                <a href="https://www.facebook.com/ProsegurEmpleosArgentina/" target="_blank" class="px-4 link-black border-right border-secondary">
                     <h4 class="d-inline-block m-0"><i class="fas fa-briefcase"></i></h4>
                     <p class="d-inline-block p-extrasmall m-0 ml-1 align-text-top">Portal de Empleo</p> 
                 </a>
-                <a href="#" class="px-4 link-black border-right border-secondary">
+                <a href="https://www.prosegur.com.ar/conocenos/contacta" target="_blank" class="px-4 link-black border-right border-secondary">
                     <h4 class="d-inline-block m-0"><i class="fas fa-street-view"></i></h4>
                     <p class="d-inline-block p-extrasmall m-0 ml-1 align-text-top">¿Sos Cliente?</p> 
                 </a>
@@ -86,9 +86,13 @@
                            </div>
                            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                               <h1 class="h2 text-white font-weight-normal mt-lg-0 mt-md-3 mt-sm-3 mt-3">Alarmas Monitoreadas</h1>
-                              <p class="text-white">Dejanos tus datos y te llamamos (exclusivo provincia):</p>
+                              <p class="text-white">Dejanos tus datos y te llamamos:</p>
                               <!-- Form -->
                               <form class="needs-validation" novalidate>
+                                <input type="hidden" name="elqFormName" value="FormBSAS">
+                                <input type="hidden" name="elqCustomerGUID" value="">
+                                <input type="hidden" name="elqCookieWrite" value="0"> 
+                                <input type="hidden" name="mgnlModelExecutionUUID" value="">  
                                  <div class="form-row">
                                     <div class="form-group col">
                                        <input type="text" class="form-control" id="nombre" placeholder="Nombre*" required>
@@ -101,13 +105,13 @@
                                  </div>
                                  <div class="form-row">
                                     <div class="form-group col">
-                                       <input type="tel" class="form-control" id="telefono" placeholder="Teléfono con código de área*">
+                                       <input type="tel" class="form-control" id="telefono" placeholder="Teléfono con código de área*" required>
                                        <div class="invalid-feedback"><p class="mb-0 mt-2">Ingrese un número de teléfono válido.</p></div>
                                     </div>
                                  </div>
                                  <div class="form-row">
                                     <div class="form-group col">
-                                       <input type="email" class="form-control" id="email" placeholder="Email*">
+                                       <input type="email" class="form-control" id="email" placeholder="Email*" required>
                                        <div class="invalid-feedback"><p class="mb-0 mt-2">Ingrese un email válido</p></div>
                                     </div>
                                  </div>
@@ -116,11 +120,13 @@
                                     <div class="form-check">
                                        <input class="form-check-input" type="checkbox" id="gridCheck2" required>
                                        <label class="form-check-label text-white" for="gridCheck2">
-                                       He leído y declaro conocer la <a href="https://www.prosegur.es/politica-de-privacidad-alarmas" target="_blank" class="yellow-prosegur hover-yellow-prosegur">Política de Privacidad</a> de Prosegur.
+                                       He leído y declaro conocer la <a href="https://www.prosegur.com.ar/politica-de-privacidad" target="_blank" class="yellow-prosegur hover-yellow-prosegur">Política de Privacidad</a> de Prosegur.
                                        </label>
                                     </div>
                                  </div>
-                                 <button type="submit" class="btn btn-primary btn-block btn-primary-prosegur btn-primary-banner-principal font-weight-bold btn-lg mb-3">TE LLAMAMOS</button>                            
+                                 <button type="submit" class="btn btn-primary btn-block btn-primary-prosegur btn-primary-banner-principal font-weight-bold btn-lg mb-3">ENVIAR</button>
+
+                                 <a href="https://tienda.prosegur.com.ar/?utm_source=prosegur&amp;utm_medium=lp&amp;utm_campaign=alarmas_hyp_landing_dsk_baires" id="ecommerce" class="link_no_u"><button type="button" class="btn btn-outline-light btn-block btn-lg mb-4"><i class="fas fa-shopping-cart position-relative mr-2" style="font-size: 16px; top:-2px"></i> COMPRÁ ONLINE <i class="fas fa-chevron-right position-relative ml-2" style="font-size: 14px; top:-2px"></i></button></a>                            
                               </form>
                            </div>
                         </div>
@@ -377,7 +383,7 @@
         </div>
      </section>
 
-     <section class="container-fluid bg-light-prosegur pt-lg-5 pt-md-4 pt-sm-4 pt-4">
+     <section class="container-fluid bg-lighter-prosegur pt-lg-5 pt-md-4 pt-sm-4 pt-4">
         <div class="container pt-3 text-center">
           <h2 class="h1 h1-xs font-weight-light text-brown mb-4">Único Sistema de Alarma con Triple Seguridad</h2>
            <div class="row py-3">
@@ -400,39 +406,6 @@
         </div>
      </section>
 
-     <!-- 4to Bloque -->
-     <section class="container-fluid py-5 bg-lighter-prosegur">
-        <div class="container text-center pt-lg-4 pt-md-4 pt-sm-4 pt-0">
-           <h4 class="h1 pt-3 pb-5 font-weight-light text-brown">¿Por qué elegir Prosegur Alarmas?</h4>
-           <div class="row pt-3">
-              <div class="col pb-5">
-                 <i class="fas fa-hands text-secondary pb-4" style="font-size: 50px"></i>
-                 <h5 class="font-weight-light">Fiabilidad</h5>
-              </div>
-              <div class="col pb-5">
-                 <i class="far fa-clock text-secondary pb-4" style="font-size: 50px"></i>
-                 <h5 class="font-weight-light">Rapidez</h5>
-              </div>
-              <div class="col pb-5">
-                 <i class="fas fa-hands-helping text-secondary pb-4" style="font-size: 50px"></i>
-                 <h5 class="font-weight-light">Compromiso</h5>
-              </div>
-              <div class="col pb-5">
-                 <i class="fas fa-circle-notch text-secondary pb-4" style="font-size: 50px"></i>
-                 <h5 class="font-weight-light">Cercanía</h5>
-              </div>
-              <div class="col pb-5">
-                 <i class="fas fa-glasses text-secondary pb-4" style="font-size: 50px"></i>
-                 <h5 class="font-weight-light">Innovación</h5>
-              </div>
-              <div class="col pb-5">
-                 <i class="fas fa-hiking text-secondary pb-4" style="font-size: 50px"></i>
-                 <h5 class="font-weight-light">Liderazgo</h5>
-              </div>
-           </div>
-        </div>
-     </section>
-
     </main>
 
 
@@ -442,13 +415,12 @@
             <div class="row">
 
               <div class="col-12">  
-                <a href="https://www.prosegur.es/politica-de-privacidad-alarmas" target="_blank" class="link-brown d-inline-block"><p class="mb-3"><u> Pólitica de privacidad</u></p></a>
-                <a href="https://www.prosegur.es/aviso-legal-alarmas" target="_blank" class="link-brown d-inline-block mx-md-3 mx-2"><p class="mb-3"><u>Aviso Legal</u></p></a>
-                <a href="https://www.prosegur.es/cookies-alarmas/" target="_blank" class="link-brown d-inline-block"><p class="mb-3"><u>Cookies</u></p></a>
+                <a href="https://www.prosegur.com.ar/arg/legales.html" target="_blank" class="link-brown d-inline-block"><p class="mb-3"><u>Términos Legales Promoción</u></p></a>
+                <a href="https://www.prosegur.com.ar/arg/proteccion_datos" target="_blank" class="link-brown d-inline-block mx-md-3 mx-2"><p class="mb-3"><u>Ley 25.326 - Protección de datos personales</u></p></a>
               </div>  
 
               <div class="col-12">
-                <p class="mb-0">&reg; Prosegur. Todos los derechos reservados. Tel: 902 577 999</p>
+                <p class="mb-0">&reg; Prosegur. Todos los derechos reservados. Tel: 0800 444 0190</p>
               </div>            
                             
             </div>
@@ -567,7 +539,91 @@
 
         });
 
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+    $.src="https://v2.zopim.com/?2vS0Wd2Lg1E7V5yerMvwb4vN0s8zlYK0";z.t=+new Date;$.
+    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+
+
     </script>
+
+      <script type="text/javascript">
+         var _elqQ = _elqQ || [];
+         _elqQ.push(['elqSetSiteId', '601373872']);
+         _elqQ.push(['elqTrackPageView']);
+         _elqQ.push(['elqGetCustomerGUID']);
+         /*código para incluir las liberia de eloqua*/
+         (function() {
+             function async_load() {
+                 var s = document.createElement('script');
+                 s.type = 'text/javascript';
+                 s.async = true;
+                 s.src = '//secure.p06.eloqua.com/i/elqCfg.min.js';
+                 var x = document.getElementsByTagName('script')[0];
+                 x.parentNode.insertBefore(s, x);
+             }
+         
+             if (window.attachEvent) {
+                 window.attachEvent('onload', async_load);
+             } else {
+                 window.addEventListener('DOMContentLoaded', async_load, false);
+             }
+         
+         })();
+         
+         var timerId = null,
+             timeout = 5;
+         /*función para incluir las variables de eloqua*/
+         function WaitUntilCustomerGUIDIsRetrieved() {
+             if (!!(timerId)) {
+                 if (timeout == 0) {
+                     return;
+                 }
+                 /*Código para incluir las variables de eloqua en los formularios*/
+                 if (typeof this.GetElqCustomerGUID === 'function') {
+                     var formsList = document.forms;
+                     var i;
+                     for (i = 0; i < formsList.length; i++) {
+                         if (formsList[i].elements["elqFormName"] != null) {
+         
+                             if (formsList[i].elements["elqCustomerGUID"] == null) {
+                                 var input_elqCustomerGUID = document.createElement("input");
+                                 input_elqCustomerGUID.type = "hidden";
+                                 input_elqCustomerGUID.name = "elqCustomerGUID";
+                                 input_elqCustomerGUID.id = "elqCustomerGUID";
+                                 input_elqCustomerGUID.value = GetElqCustomerGUID();
+                                 formsList[i].append(input_elqCustomerGUID);
+                             } else {
+                                 formsList[i].elements["elqCustomerGUID"].value = GetElqCustomerGUID();
+                             }
+         
+                             if (formsList[i].elements["elqCookieWrite"] == null) {
+                                 var input_elqCookieWrite = document.createElement("input");
+                                 input_elqCookieWrite.type = "hidden";
+                                 input_elqCookieWrite.name = "elqCookieWrite";
+                                 input_elqCookieWrite.id = "elqCookieWrite";
+                                 input_elqCookieWrite.value = 0;
+                                 formsList[i].append(input_elqCookieWrite);
+                             }
+                         }
+                     }
+                     /*Código para añadir la cookie de eloqua al dominio de la web y poder usar la personalización*/
+                     var d = new Date();
+                     d.setTime(d.getTime() + (31536000000));
+                     document.cookie = "ELOQUA=" + GetElqCustomerGUID() + ";expires=" + d.toUTCString() + ";path=/";
+                     return;
+                 }
+         
+                 timeout -= 1;
+             }    
+             timerId = setTimeout("WaitUntilCustomerGUIDIsRetrieved()", 500);
+             return;
+         }
+         /*Cuando cargue el la pagina se llama a la función de las variables de eloqua*/
+         window.onload = WaitUntilCustomerGUIDIsRetrieved;
+         _elqQ.push(['elqGetCustomerGUID']);
+      </script>  
 
 
   </body>
