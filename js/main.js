@@ -80,6 +80,16 @@ $(function(){
     });
 
 
+    // Hide footer on click input
+    $('input').focus(function() {
+       $('.variable-width').hide();
+    });
+
+    $('input').focusout(function() {
+         $('.variable-width').show();
+    });
+
+
 });
 
 /* Validation */
